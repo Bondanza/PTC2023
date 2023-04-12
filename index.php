@@ -3,7 +3,7 @@
 <html lang="es">
 
 <head>
-  <title>Miravalle EcoSurf</title>
+  <title>Miravalle EcoSurffff</title>
   <!--meta tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,7 +26,7 @@
   <link href="css/font-awesome.min.css" rel="stylesheet">
   <!-- //font-awesome icons -->
   <!--stylesheets-->
-  <link href="css1/style.css" rel='stylesheet' type='text/css' media="all">
+  <link href="css/style.css" rel='stylesheet' type='text/css' media="all">
   <!--//stylesheets-->
   <link href="//fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
   <link href="//fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
@@ -57,7 +57,7 @@
         <input type="checkbox" id="drop">
         <ul class="menu mt-2">
           <li class="active">
-            <a href="index.html">Inicio</a>
+            <a href="index.php">Inicio</a>
           </li>
           <li>
             <a href="#about">Acerca de</a>
