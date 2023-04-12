@@ -35,7 +35,7 @@
 
 <body>
   <!-- //banner -->
-  <div class="banner-left-side" id="home">
+  <div class="banner-left-side" >
     <!-- header -->
     <div class="headder-top">
       <!-- nav -->
@@ -77,7 +77,7 @@
     
     <!-- //header -->
     <!-- banner -->
-    <div class="main-banner text-center">
+    <div class="main-banner text-center" id="home" >
       <div class="container">
         <div class="social-icons mb-lg-4 mb-3">
           <ul>
@@ -153,7 +153,7 @@
             <img src="images/ab1.jpg" alt="news image" class="img-fluid">
             <div class="ser-text-wthree mt-3">
               <a href="/estadia.html" > Estadía </a>
-              <p class="mt-2"> Escoge entre una amplia variedad de habitaciones </p>
+              <p class="mt-2"> Escoge entre una amplia variedad de habitaciones de gran comodidad</p>
             </div>
           </div>
         </div>
@@ -288,53 +288,12 @@
             </div>
           </div>
         </div>
-        <div class="footer-bottom-info col-lg-4 col-md-4 ">
-          <h4 class="pb-lg-4 pb-md-3 pb-3 ">Twitter Us</h4>
-          <div class="footer-office-hour">
-            <ul>
-              <li>
-                <p>sit amet consectetur adipiscing</p>
-              </li>
-              <li class="my-1">
-                <p>
-                  <a href="mailto:info@example.com">info@example.com</a>
-                </p>
-              </li>
-              <li class="mb-3">
-                <span class="font-italic">Posted 3 days ago.</span>
-              </li>
-              <li>
-                <p>sit amet consectetur adipiscing</p>
-              </li>
-              <li class="my-1">
-                <p>
-                  <a href="mailto:info@example.com">info@example.com</a>
-                </p>
-              </li>
-              <li>
-                <span class="font-italic">Posted 3 days ago.</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-bottom-info col-lg-4 col-md-4 ">
-          <h4 class="pb-lg-4 pb-md-3 pb-3 ">NewsLetter</h4>
-          <div class="newsletter">
-            <form action="#" method="post" class="d-flex">
-              <input type="email" name="Your Email" class="form-control" placeholder="Your Email" required="">
-              <button class="btn1">
-                <span class="fa fa-envelope-o" aria-hidden="true"></span>
-              </button>
-            </form>
-          </div>
-          <div class="footer-office-hour mt-3">
-            <p>vehicula velit sagittis vehicula. Duis posuere ex in mollis iaculis. Suspendisse tincidunt velit sagittis vehicula</p>
-          </div>
-        </div>
+    
+      
       </div>
       <!-- move icon -->
       <div class="text-center mt-lg-5 mt-md-4 mt-3">
-        <a href="#home" class="move-top text-center mt-3">
+        <a href="#" class="move-top text-center mt-3">
           <span class="fa fa-arrow-up" aria-hidden="true"></span>
         </a>
       </div>
