@@ -103,7 +103,7 @@
           <h4>EcoSurf </h4>
         </div>
         <div class="slide-info-txt">
-          <p> Somos un hotel de playa ubicado en la bella playa Miralvalle, una playa extremadamente limpia y segura. </p>
+          <p> Somos un hotel de playa ubicado en la bella playa Miravalle, una playa extremadamente limpia y segura. </p>
         </div>
       </div>
     </div>
@@ -152,7 +152,7 @@
           <div class="grid-wthree-service">
             <img src="images/ab1.jpg" alt="news image" class="img-fluid">
             <div class="ser-text-wthree mt-3">
-              <a href="/estadia.html" > Estadía </a>
+              <a href="estadia.html" > Estadía </a>
               <p class="mt-2"> Escoge entre una amplia variedad de habitaciones de gran comodidad</p>
             </div>
           </div>
