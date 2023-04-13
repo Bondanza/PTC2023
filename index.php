@@ -166,7 +166,7 @@
           <div class="grid-wthree-service">
             <img src="images/ab2.jpg" alt="news image" class="img-fluid">
             <div class="ser-text-wthree mt-3">
-              <a href="xdxdxdxd.php"> Restaurante </a>
+              <a href="restaurante.html"> Restaurante </a>
 
               <p class="mt-2"> Escoge el plato de tu preferencia de nuestro amplio menu de comida </p>
             </div>
