@@ -5,9 +5,7 @@ $dbname = 'mves';
 $user = 'postgres';
 $password = 'info2023';
 
-if (isset($_SESSION['usuario'])) {
-	header('Location: index.php');
-}
+
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$usuario = filter_var(strtolower($_POST['usuario']), FILTER_SANITIZE_STRING);

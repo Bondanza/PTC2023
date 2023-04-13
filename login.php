@@ -1,13 +1,11 @@
 <?php session_start();
 
 $host = 'localhost';
-$dbname = 'rieger';
-$user = 'Elias';
-$password = '123';
+$dbname = 'mves';
+$user = 'postgres';
+$password = 'info2023';
 
-if (isset($_SESSION['usuario'])) {
-	header('Location: index.php');
-}
+
 
 $errores = '';
 
