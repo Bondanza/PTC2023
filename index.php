@@ -161,7 +161,7 @@
           <div class="grid-wthree-service">
             <img src="images/ab2.jpg" alt="news image" class="img-fluid">
             <div class="ser-text-wthree mt-3">
-            <a href="/xdxdxdxd.php"> Restaurante </a>
+            <a href="xdxdxdxd.php"> Restaurante </a>
 
               <p class="mt-2"> Escoge el plato de tu preferencia de nuestro amplio menu de comida </p>
             </div>
@@ -171,7 +171,7 @@
           <div class="grid-wthree-service">
             <img src="images/ab3.jpg" alt="news image" class="img-fluid">
             <div class="ser-text-wthree mt-3">
-            <a href="/tiendas.html"> Surf Shop </a>
+            <a href="tiendas.html"> Surf Shop </a>
 
               <p class="mt-2"> Compra implementos de surf de nuestra gran tienda </p>
             </div>
@@ -181,7 +181,7 @@
           <div class="grid-wthree-service">
             <img src="images/ab4.png" alt="news image" class="img-fluid">
             <div class="ser-text-wthree mt-3">
-            <a href="/tiendas.html"> Souvenir Shop </a>
+            <a href="tiendas.html"> Souvenir Shop </a>
 
               <p class="mt-2"> ¿Quieres un recuerdo para ti o para regalar a tu familiar? Compralo en nuestra tienda de Souvenirs </p>
             </div>
@@ -191,7 +191,7 @@
           <div class="grid-wthree-service">
             <img src="images/ab5.jpeg" alt="news image" class="img-fluid">
             <div class="ser-text-wthree mt-3">
-            <a href="/Clases.html"> Clases de Surf </a>
+            <a href="Clases.html"> Clases de Surf </a>
               <p class="mt-2"> Eres entusiasta del surf y deseas aprender? Agenda tus lecciones ya y aprende con nosotros </p>
             </div>
           </div>
