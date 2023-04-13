@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -7,8 +6,8 @@
   <!--meta tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
- 
-         <link rel="icon" type="image/x-icon" href="images/Logo1.png">
+
+  <link rel="icon" type="image/x-icon" href="images/Logo1.png">
   <script>
     addEventListener("load", function() {
       setTimeout(hideURLbar, 0);
@@ -35,7 +34,7 @@
 
 <body>
   <!-- //banner -->
-  <div class="banner-left-side" >
+  <div class="banner-left-side">
     <!-- header -->
     <div class="headder-top">
       <!-- nav -->
@@ -43,7 +42,7 @@
         <div id="logo">
           <h1>
             <a class="navbar-logo " href="index.php">
-            <img id="logo" src="images/Logo1.png" >
+              <img id="logo" src="images/Logo1.png">
             </a>
           </h1>
         </div>
@@ -56,6 +55,12 @@
         <label for="drop" class="toggle">Menu</label>
         <input type="checkbox" id="drop">
         <ul class="menu mt-2">
+        <li class="active">
+            <a href="login.php"> Iniciar Sesion </a>
+          </li>
+          <li class="active">
+            <a href="index.php"> Registrarse </a>
+          </li>
           <li class="active">
             <a href="index.php">Inicio</a>
           </li>
@@ -71,13 +76,13 @@
           </li>
         </ul>
       </nav>
-      
+
       <!-- //nav -->
     </div>
-    
+
     <!-- //header -->
     <!-- banner -->
-    <div class="main-banner text-center" id="home" >
+    <div class="main-banner text-center" id="home">
       <div class="container">
         <div class="social-icons mb-lg-4 mb-3">
           <ul>
@@ -126,7 +131,7 @@
         <div class="col-lg-7 left-abut-txt ">
           <div class="about-right-grid">
             <h2 class="mb-3">Relajate al sonido de las olas</h2>
-            <p>Miravalle EcoSurf es un hotel ubicado en la hermosa playa Miravalle, una playa extremadamente agradable y buena para surfear. 
+            <p>Miravalle EcoSurf es un hotel ubicado en la hermosa playa Miravalle, una playa extremadamente agradable y buena para surfear.
               Como estadía ofrecemos una amplia variedad de amenidades, como lo son una gran selección de habitaciones para hospedarse, un restaurante
               con un amplio menú, una tienda de diferentes articulos de conveniencia, especialmente relacionados al surf, como puede ser cera para tabla,
               straps, camisetas, y muchas cosas mas.
@@ -152,16 +157,16 @@
           <div class="grid-wthree-service">
             <img src="images/ab1.jpg" alt="news image" class="img-fluid">
             <div class="ser-text-wthree mt-3">
-              <a href="estadia.html" > Estadía </a>
+              <a href="estadia.html"> Estadía </a>
               <p class="mt-2"> Escoge entre una amplia variedad de habitaciones de gran comodidad</p>
             </div>
           </div>
         </div>
-        <div  class="col-lg-4 col-md-6 col-sm-6 ser-icon text-center my-3">
+        <div class="col-lg-4 col-md-6 col-sm-6 ser-icon text-center my-3">
           <div class="grid-wthree-service">
             <img src="images/ab2.jpg" alt="news image" class="img-fluid">
             <div class="ser-text-wthree mt-3">
-            <a href="xdxdxdxd.php"> Restaurante </a>
+              <a href="xdxdxdxd.php"> Restaurante </a>
 
               <p class="mt-2"> Escoge el plato de tu preferencia de nuestro amplio menu de comida </p>
             </div>
@@ -171,7 +176,7 @@
           <div class="grid-wthree-service">
             <img src="images/ab3.jpg" alt="news image" class="img-fluid">
             <div class="ser-text-wthree mt-3">
-            <a href="tiendas.html"> Surf Shop </a>
+              <a href="tiendas.html"> Surf Shop </a>
 
               <p class="mt-2"> Compra implementos de surf de nuestra gran tienda </p>
             </div>
@@ -181,7 +186,7 @@
           <div class="grid-wthree-service">
             <img src="images/ab4.png" alt="news image" class="img-fluid">
             <div class="ser-text-wthree mt-3">
-            <a href="tiendas.html"> Souvenir Shop </a>
+              <a href="tiendas.html"> Souvenir Shop </a>
 
               <p class="mt-2"> ¿Quieres un recuerdo para ti o para regalar a tu familiar? Compralo en nuestra tienda de Souvenirs </p>
             </div>
@@ -191,7 +196,7 @@
           <div class="grid-wthree-service">
             <img src="images/ab5.jpeg" alt="news image" class="img-fluid">
             <div class="ser-text-wthree mt-3">
-            <a href="Clases.html"> Clases de Surf </a>
+              <a href="Clases.html"> Clases de Surf </a>
               <p class="mt-2"> Eres entusiasta del surf y deseas aprender? Agenda tus lecciones ya y aprende con nosotros </p>
             </div>
           </div>
@@ -201,7 +206,7 @@
             <img src="images/ab6.jpeg" alt="news image" class="img-fluid">
             <div class="ser-text-wthree mt-3">
               <h4>
-              Información sobre la playa
+                Información sobre la playa
               </h4>
               <p class="mt-2">Aqui encontraras toda las estadisticas de las diferentes playas</p>
             </div>
@@ -216,9 +221,9 @@
     <div class="container-fulid">
       <div class="address_mail_footer_grids">
         <iframe src="https://maps.google.com/maps?q=13.532228882220366,%20-89.75886145622364&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"></iframe>
-          <iframe src="https://www.surfline.com/surf-report/la-bocana/5842041f4e65fad6a7708bae" ></iframe>
-
-        </div>
+<!--        <iframe src="https://www.surfline.com/surf-report/la-bocana/5842041f4e65fad6a7708bae"></iframe>
+ -->
+      </div>
     </div>
   </section>
   <!-- contact -->
@@ -288,8 +293,8 @@
             </div>
           </div>
         </div>
-    
-      
+
+
       </div>
       <!-- move icon -->
       <div class="text-center mt-lg-5 mt-md-4 mt-3">
@@ -300,7 +305,7 @@
       <!--//move icon -->
     </div>
   </section>
- 
+
 </body>
 
 </html>
