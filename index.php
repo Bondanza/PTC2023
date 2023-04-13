@@ -3,7 +3,7 @@
 <html lang="es">
 
 <head>
-  <title>Miravalle EcoSurfffff</title>
+  <title>Miravalle EcoSurf</title>
   <!--meta tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
