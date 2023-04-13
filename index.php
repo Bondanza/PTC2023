@@ -59,7 +59,7 @@
             <a href="login.php"> Iniciar Sesion </a>
           </li>
           <li class="active">
-            <a href="index.php"> Registrarse </a>
+            <a href="registrate.php"> Registrarse </a>
           </li>
           <li class="active">
             <a href="index.php">Inicio</a>
