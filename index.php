@@ -56,10 +56,10 @@
         <input type="checkbox" id="drop">
         <ul class="menu mt-2">
         <li class="active">
-            <a href="login.php"> Iniciar Sesion </a>
+            <a href="log_Reg.php"> Iniciar Sesion </a>
           </li>
           <li class="active">
-            <a href="registrate.php"> Registrarse </a>
+            <a href="log_Reg.php"> Registrarse </a>
           </li>
           <li class="active">
             <a href="index.php">Inicio</a>

@@ -28,24 +28,18 @@
 					<input type="email" name="correo" placeholder="Correo electronico">
 					<input type="password" name="password" placeholder="Contraseña">
                     <input type="password" name="password2" placeholder="Repita su contraseña">
-					<input type="submit" placeholder="Sign up">
+					<input type="submit" placeholder="Registrarse">
 
-                    <?php if(!empty($errores)): ?>
-				<div class="error">
-					<ul>
-						<?php echo $errores; ?>
-					</ul>
-				</div>
-			<?php endif; ?>
+                  
 				</form>
 			</div>
 
 			<div class="login">
-				<form>
+				<form action="login.php" method="POST">
 					<label for="chk" aria-hidden="true">Login</label>
-					<input type="email" name="email" placeholder="Email" required="">
-					<input type="password" name="pswd" placeholder="Password" required="">
-					<button>Login</button>
+					<input type="text" name="CorUs" placeholder="Nombre de usuario o Correo">
+					<input type="password" name="password" placeholder="contraseña">
+					<input type="submit" placeholder="Iniciar Sesion">
 				</form>
 			</div>
 	</div>

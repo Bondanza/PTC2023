@@ -1,42 +1,41 @@
-<?php session_start();
+<?php
+$host = "localhost";
+$dbname = "mves";
+$user = "postgres";
+$password = "info2023";
 
-$host = 'localhost';
-$dbname = 'mves';
-$user = 'postgres';
-$password = 'info2023';
+// Connect to the database
+$conn = pg_connect("host=$host dbname=$dbname user=$user password=$password");
+if (!$conn) {
+  echo "Error de conexion";
+  exit;
+}
+?>
 
-
-
-$errores = '';
-
+<?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-	$usuario = filter_var(strtolower($_POST['usuario']), FILTER_SANITIZE_STRING);
-	$password = $_POST['password'];
-	$password = hash('sha512', $password);
+  $email_or_username = $_POST['CorUs'];
+  $password = $_POST['password'];
+  $hashpass = hash('sha512', $password);
 
-	try {
-		$dbh = new PDO("pgsql:host=$host;dbname=$dbname", $user, $password);
-	} catch (PDOException $e) {
-		echo "Error:" . $e->getMessage();;
-	}
+  // Check if the email/username exists in the database
+  $query = "SELECT * FROM usuarios WHERE correo = $1 OR user = $1";
+  $result = pg_query_params($conn, $query, array($email_or_username));
 
-	$statement = $conexion->prepare('
-		SELECT * FROM usuarios WHERE usuario = :usuario AND pass = :password'
-	);
-	$statement->execute(array(
-		':usuario' => $usuario,
-		':password' => $password
-	));
+  if (!$result) {
+    echo "Login failed";
+  } else {
+    $row = pg_fetch_assoc($result);
 
-	$resultado = $statement->fetch();
-	if ($resultado !== false) {
-		$_SESSION['usuario'] = $usuario;
-		header('Location: index.php');
-	} else {
-		$errores .= '<li>Datos Incorrectos</li>';
-	}
+    // Verify the password
+    if (password_verify($hashpass, $row['password'])) {
+      echo "Login successful";
+    } else {
+      echo "Login failed";
+    }
+  }
 }
 
-require 'views/login.view.php';
-
+// Close the database connection
+pg_close($conn);
 ?>
