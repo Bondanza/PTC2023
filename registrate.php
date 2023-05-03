@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $hashed_password = hash('sha512', $password);
 
     // Insert user data into the database
-    $query =  pg_send_query($conn, "INSERT INTO usuarios (user, correo, pass) VALUES ('$username', '$email', '$hashed_password')");
+    $query =  pg_send_query($conn, "INSERT INTO usuarios (user, correo, pass) VALUES('$username', '$email', '$hashed_password')");
     $res1 = pg_get_result($conn);
     echo pg_result_error (pg_get_result($conn));
 
