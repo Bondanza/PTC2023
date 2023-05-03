@@ -1,16 +1,7 @@
 <?php
-$host = "localhost";
-$dbname = "mves";
-$user = "postgres";
-$password = "info2023";
-
-// Connect to the database
-$conn = pg_connect("host=$host dbname=$dbname user=$user password=$password");
-if (!$conn) {
-  echo "Error de conexion";
-  exit;
-}
+include 'db.php';
 ?>
+
 
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -19,8 +10,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $hashpass = hash('sha512', $password);
 
   // Check if the email/username exists in the database
-  $query = "SELECT * FROM usuarios WHERE correo = $1 OR user = $1";
-  $result = pg_query_params($conn, $query, array($email_or_username));
+  $query = "SELECT * FROM usuarios WHERE correo = $email_or_username OR user = $email_or_username";
+  $result = pg_query_params($conn, $query);
 
   if (!$result) {
     echo "Login failed";

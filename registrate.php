@@ -1,15 +1,5 @@
 <?php
-$host = "localhost";
-$dbname = "mves";
-$user = "postgres";
-$password = "info2023";
-
-// Connect to the database
-$conn = pg_connect("host=$host dbname=$dbname user=$user password=$password");
-if (!$conn) {
-  echo "Error de conexion";
-  exit;
-}
+include 'db.php';
 ?>
 
 <?php
@@ -30,20 +20,24 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     echo "Password and confirmation password do not match";
   } else {
     // Hash the password for security
-    $hashed_password = hash($password, 'sha512');
+    $hashed_password = hash('sha512', $password);
 
     // Insert user data into the database
-    $query = "INSERT INTO usuarios(user, correo, pass) VALUES ($1, $2, $3)";
-    $result = pg_query_params($conn, $query, array($username, $email, $hashed_password));
+    $query =  pg_send_query($conn, "INSERT INTO usuarios (user, correo, pass) VALUES ('$username', '$email', '$hashed_password')");
+    $res1 = pg_get_result($conn);
+    echo pg_result_error (pg_get_result($conn));
 
-    if (!$result) {
-      echo "Registration failed";
+    if ($query > 0) {
+      echo pg_result_error_field($res1, PGSQL_DIAG_SQLSTATE);
+      echo $query;
+      echo "Registro exitoso";
     } else {
       echo "User registered successfully";
+      echo pg_result_error_field($res1, PGSQL_DIAG_SQLSTATE);
     }
   }
 }
 
 // Close the database connection
-pg_close($conn);
+// pg_close($conn);
 ?>
