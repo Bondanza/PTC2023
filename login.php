@@ -1,32 +1,27 @@
 <?php
 include 'db.php';
-?>
-
-
-<?php
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-  $email_or_username = $_POST['CorUs'];
-  $password = $_POST['password'];
-  $hashpass = hash('sha512', $password);
-
-  // Check if the email/username exists in the database
-  $query = "SELECT * FROM usuarios WHERE correo = $email_or_username OR user = $email_or_username";
-  $result = pg_query_params($conn, $query);
-
-  if (!$result) {
-    echo "Login failed";
-  } else {
-    $row = pg_fetch_assoc($result);
-
-    // Verify the password
-    if (password_verify($hashpass, $row['password'])) {
-      echo "Login successful";
-    } else {
-      echo "Login failed";
-    }
+   session_start();
+   if (isset($_SESSION['login_user' ])) {
+    header('Location: index.php');
   }
-}
+   if($_SERVER["REQUEST_METHOD"] == "POST") {
+ 
 
-// Close the database connection
-pg_close($conn);
+      $myusername = pg_escape_string($conn,$_POST['CorUs']);
+      $password = pg_escape_string($conn,$_POST['password']); 
+      $mypassword = hash('sha512', $password);
+
+      $sql = "SELECT  usuario, correo FROM usuarios WHERE (usuario = '$myusername' OR correo = '$myusername') AND pass = '$mypassword'";
+      $result = pg_query($conn,$sql);
+      $row = pg_fetch_array($result,PGSQL_ASSOC);
+      $count = pg_num_rows($result);
+
+      if($count == 1) {
+         $_SESSION['login_user'] = $row['usuario'];
+         
+         header("location: index.php");
+      }else {
+         echo  "Your Login Name or Password is invalid";
+      }
+   }
 ?>

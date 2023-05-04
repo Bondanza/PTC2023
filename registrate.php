@@ -1,8 +1,11 @@
 <?php
 include 'db.php';
-?>
+session_start();
+   if (isset($_SESSION['login_user' ])) {
+    header('Location: index.php');
+  }
 
-<?php
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $username = $_POST['usuario'];
   $email = $_POST['correo'];
@@ -23,17 +26,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $hashed_password = hash('sha512', $password);
 
     // Insert user data into the database
-    $query =  pg_send_query($conn, "INSERT INTO usuarios (user, correo, pass) VALUES('$username', '$email', '$hashed_password')");
+    $query =  pg_send_query($conn, "INSERT INTO usuarios (usuario, correo, pass) VALUES('$username', '$email', '$hashed_password')");
     $res1 = pg_get_result($conn);
     echo pg_result_error (pg_get_result($conn));
 
     if ($query > 0) {
-      echo pg_result_error_field($res1, PGSQL_DIAG_SQLSTATE);
-      echo $query;
+      // echo pg_result_error_field($res1, PGSQL_DIAG_SQLSTATE);
+      // echo $query;
       echo "Registro exitoso";
+      header("location: log_Reg.php");
     } else {
-      echo "User registered successfully";
-      echo pg_result_error_field($res1, PGSQL_DIAG_SQLSTATE);
+      echo "No se pudo completar el registro, intente nuevamente";
+      // echo pg_result_error_field($res1, PGSQL_DIAG_SQLSTATE);
     }
   }
 }
