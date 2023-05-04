@@ -67,7 +67,8 @@ h6 {
 }
 p {
 	font-size: 16px;
-	font-family: "Cabin", sans-serif;
+	font-family: 'Instrument Serif', serif;
+font-family: 'Roboto Slab', serif;
 	color: #6b6b6b;
 	font-weight: 400;
 	line-height: 26px;
@@ -421,6 +422,8 @@ ul, ol {
 .menu-item .nav-menu .mainmenu li a {
 	font-size: 16px;
 	color: #19191a;
+  font-family: 'Instrument Serif', serif;
+font-family: 'Roboto Slab', serif;
 	margin-right: 42px;
 	font-weight: 500;
 	display: inline-block;
@@ -1937,9 +1940,9 @@ ul, ol {
 	font-size: 13px;
 	font-weight: 700;
 	text-transform: uppercase;
-	color: #ffffff;
+	color: #000000;
 	letter-spacing: 2px;
-	background: #dfa974;
+	background: #afd3e2;
 	border: none;
 	padding: 14px 34px 13px;
 	display: inline-block;
@@ -2431,7 +2434,8 @@ h3.title {
     letter-spacing: 2px;
     font-weight: 400;
     text-transform: capitalize;
-font-family: 'Patrick Hand', cursive;
+    font-family: 'Instrument Serif', serif;
+    font-family: 'Roboto Slab', serif;
 }
 .title-w3ls-text p {
     font-size: 16px;
@@ -2441,8 +2445,8 @@ font-family: 'Patrick Hand', cursive;
     padding: 0em 18em;
 }
 .ser-text-wthree h4,.blog-txt-info h4 a,.footer-bottom-info h4{
-    font-size: 25px;
-    color:#3b9974;
+    font-size: 26px;
+    color:#000000;
     text-transform: capitalize;
 }
 .sent-butnn:hover,.view-buttn a:hover {
@@ -2451,6 +2455,8 @@ font-family: 'Patrick Hand', cursive;
 p{
     font-size: 14px;
     color: #888;
+    font-family: 'Instrument Serif', serif;
+font-family: 'Roboto Slab', serif;
     letter-spacing: 1px;
 	line-height: 27px;
 }
@@ -2487,11 +2493,11 @@ nav {
     position: absolute;
     top: 3px;
     border: none;
-    border-left: 2px solid #961f1f;
+    border-left: 2px solid #3590bc;
     left: 150px;
     padding-left: 7px;
     line-height: 40px;
-    color: #ffc107;
+    color: #F0A04B;
     letter-spacing: 1.5px;
     font-weight: bold;
     text-transform: capitalize;
@@ -2542,6 +2548,8 @@ nav ul li a {
     border-radius: 50px;
     display: inline-block;
     transition: 0.5s all;
+    font-family: 'Instrument Serif', serif;
+    font-family: 'Roboto Slab', serif;
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
     -o-transition: 0.5s all;
@@ -2859,13 +2867,16 @@ background-color: #212121;
     letter-spacing: 2px;
     text-shadow: 3px 1px 11px #5f5e5e94;
     line-height: 65px;
-font-family: 'Patrick Hand', cursive;
+    font-family: 'Instrument Serif', serif;
+    font-family: 'Roboto Slab', serif;
 }
 .slide-info-txt p {
     color: #dadada;
     font-size: 15px;
     text-shadow: 2px 2px 8px #000;
     line-height: 27px;
+    font-family: 'Instrument Serif', serif;
+font-family: 'Roboto Slab', serif;
     letter-spacing: 1px;
     padding: 3em 15em 0em;
 }
@@ -2899,11 +2910,12 @@ font-family: 'Patrick Hand', cursive;
 }
 .about-right-grid h2, .store-details h4 {
     font-size: 35px;
-    color: #c50e1f;
+    color: #3590bc;
     letter-spacing: 1px;
     font-weight: 400;
     line-height: 34px;
-    font-family: 'Patrick Hand', cursive;
+    font-family: 'Instrument Serif', serif;
+font-family: 'Roboto Slab', serif;
 }
 .abut-img-w3l img,.abut-img-two img  {
     box-shadow: -2px -2px 5px #7b7b7b;
@@ -2917,7 +2929,7 @@ border-radius: 50%;
 box-shadow: 1px 1px 7px #a2a2a2;
 }
 .grid-wthree-service {
-    background: #ececec;
+    background: #fff;
     padding: 2em 1.5em;
     box-shadow: 0px 0px 9px #c7c7c7;
     transition: 0.5s all;
@@ -2927,12 +2939,12 @@ box-shadow: 1px 1px 7px #a2a2a2;
     -ms-transition: 0.5s all;
 }
 .grid-wthree-service:hover {
-    background: #ffc107;
+    background: #afd3e2;
 }
 /* --veg-info --*/
 .w3three-veg-org h6,.blog-info a ul li ,.news-date-list ul li a,.footer-office-hour h6,.footer-office-hour ul li span,.store-details h6{
     font-size: 14px;
-    color:#c50e1f;
+    color:#810d19;
 }
 .w3three-veg-org h5 {
     font-size: 19px;
@@ -3025,7 +3037,7 @@ box-shadow: 1px 1px 7px #a2a2a2;
     padding: .9em 0em;
     outline: none;
     border: none;
-    border-bottom: 2px solid #28a745;
+    border-bottom: 2px solid #3590bc;
     border-radius: 0px;
     outline: none;
     background: transparent;
@@ -3080,10 +3092,12 @@ button.btn1 {
     background: #000;
 }
 .footer-w3layouts-bottem {
-    background: #06121f;
+    background: #146c94;
 }
-.footer-office-hour ul li p,.footer-office-hour ul li p a,.footer-office-hour p{font-size: 13px;
-    color: #bbb9b9;
+.footer-office-hour ul li p,.footer-office-hour ul li p a,.footer-office-hour p
+{
+  font-size: 20px;
+    color: #050505;
     line-height: 21px;
 }
 .bottem-wthree-footer p {
@@ -3236,7 +3250,7 @@ button.btn1 {
     height: 9em;
 }
 .w3three-veg-org h6, .blog-info a ul li, .news-date-list ul li a, .footer-office-hour h6, .footer-office-hour ul li span, .store-details h6 {
-    font-size: 13px;
+    font-size: 24px;
 }
 }
 @media(max-width:991px){
@@ -3314,7 +3328,7 @@ padding: 7px 19px;
 }
 @media(max-width:768px){
 nav ul li a {
-    padding: 8px 15px;
+    padding: 15px 15px;
 }
 #logo a {
     font-size: 35px;
@@ -3670,7 +3684,7 @@ h3.title {
   --bs-warning-rgb: 255, 193, 7;
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 248, 249, 250;
-  --bs-dark-rgb: 33, 37, 41;
+  --bs-dark-rgb: 53, 144, 188;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
@@ -3727,6 +3741,8 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 500;
+  font-family: 'Instrument Serif', serif;
+font-family: 'Roboto Slab', serif;
   line-height: 1.2;
 }
 

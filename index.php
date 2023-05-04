@@ -205,10 +205,8 @@
           <div class="grid-wthree-service">
             <img src="images/ab6.jpeg" alt="news image" class="img-fluid">
             <div class="ser-text-wthree mt-3">
-              <h4>
-                Información sobre la playa
-              </h4>
-              <p class="mt-2">Aqui encontraras toda las estadisticas de las diferentes playas</p>
+                <a href=#>Información sobre la playa </a>
+              <p class="mt-2">Aqui encontraras toda las estadisticas de las diferentes playas con las que cuenta el pais.</p>
             </div>
           </div>
         </div>
