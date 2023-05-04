@@ -33,8 +33,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($query > 0) {
       // echo pg_result_error_field($res1, PGSQL_DIAG_SQLSTATE);
       // echo $query;
-      echo "Registro exitoso";
-      header("location: log_Reg.php");
+      
+      header("location: index.php");
+      echo "Registro exitoso, porfavor inicie sesion";
     } else {
       echo "No se pudo completar el registro, intente nuevamente";
       // echo pg_result_error_field($res1, PGSQL_DIAG_SQLSTATE);

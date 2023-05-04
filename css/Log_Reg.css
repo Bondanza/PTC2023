@@ -6,7 +6,7 @@ body{
 	align-items: center;
 	min-height: 100vh;
 	font-family: 'Jost', sans-serif;
-	background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+	background: linear-gradient(to bottom, #dcdcd4, #3590bc, #2d2d86);
 }
 .main{
 	width: 350px;
@@ -75,7 +75,7 @@ button:hover{
 	transition: .8s ease-in-out;
 }
 .login label{
-	color: #573b8a;
+	color: #3590bc;
 	transform: scale(.6);
 }
 
